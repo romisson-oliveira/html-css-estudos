@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-2</title>    <!-- Caracteres, parágrafos e quebra de linhas -->
+</head>
+<body>
+    <h1>Caracteres, parágrafos e quebra de linhas</h1>
+    <!-- Começamos um parágrafo com a tag p entre os sinais de maior e menor -> <p> -->
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus, accusamus sequi officiis eum rerum eveniet labore molestiae incidunt optio. Qui vitae sunt sequi fuga? Unde voluptatum sed molestias quisquam?</p> <!-- Encerramos todas as tags seguindo com o sinal de menor, contrabarra, nome da tag e sinal de maior -->
+
+    <!-- Usamos a tag de <br>, que significa break em inglês, para quebrar linha -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Obcaecati iusto aut praesentium eaque vitae earum nemo culpa voluptates <br>illo voluptas doloribus necessitatibus aspernatur, ipsum iure quod perspiciatis dolorem! Laborum, odit.
+    </p>
+
+    <!-- Alguns símbolos, como o de menor e maior, são interpretados conforme sua semântica dentro de um código html. Mas pode haver momentos em que desejamos utilizar os símbolos apenas, para isso usamos os caracteres especiais.
+
+    Por exemplo: para usar o símbolo de menor -> &lt; e para usar o maior -> &gt;
+    Existe uma tabela para utilizar, basta consultar na web.
+    -->
+    <p>
+        Imagine que em algum momento você queira digitar um explicação sobre as tags em html e decida usar a tag de parágrafo. Se você digitar normalmente, o interpretador entrenderá como um comando html não como apenas um texto.
+        <br>Observe que nesta parte vamos usar esta tag: &lt;p&gt;Este é um parágrafo&lt;/p&gt; com os símbolos característicos das tags mas não definimos este trecho como parágrafo.
+    </p>
+    <p>Vamos adicionar alguns símbolos especiais:
+        &reg;
+        &copy;
+        &trade;
+        &euro;
+        &pound;
+        &yen;
+        &cent;
+        &Delta;
+        &uarr;
+        &duarr;
+        &rarr;
+        &larr;
+    </p>
+
+    <hr>
+    <p>Vamos inserir emoji neste momento utilizando um padrão Unicode. Em sites como <a href="https://emojipedia.org" target="_blank">Emojipedia.org</a>, você obterá código precisos e atualizados.<br>Dentro do site, cópie o emoji e cole no texto html -> ✔️
+    <br>Desta forma acima funciona em alguns navegadores, não funciona em todos. Para padronizar e falicitar para que sempre execute seu emoji, utilize da seguinte forma:  
+    </p>
+    <p>
+        Através do <strong>Codepoint</strong> para receber o código do emoji e inserir aqui. <!-- Note que o código do emoji acima é U+2714U+FE0F. Porém para conserguir usar, vamos alterar o início do código de U+ para &#x Observe -->
+        &#x2714&#xFE0F
+    </p>
+
+</body>
+</html>

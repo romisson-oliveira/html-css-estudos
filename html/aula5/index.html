@@ -1,0 +1,128 @@
+<!DOCTYPE html> <!-- Semântica é o significado dos vocábulos, por oposição à sua forma. -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+
+<body>
+    <h1>Formatação de Texto - Html Semântico</h1>
+    <h2>Negrito e Itálico</h2>
+    <p>
+        Antigamente, com html 4, usava-se as tabs &lt;b&gt; e &lt;i&gt; para esta tarefa, mas elas não possuem
+        significado e focam apenas na forma, sendo assim, são pouco semânticos.
+        <br>
+        Em html 5, usamos &lt;strong&gt; para <strong>negrito</strong> e &lt;em&gt; para <em>itálico</em>, pois este
+        último serve para dar ênfase.
+    </p>
+    <p>
+        Essas tags não só mudam a forma das palavras mas também possuem sentido. Porém, para nós o que importa mesmo
+        utilizando essas tags está em seu significado. Pois a forma como ele serão apresentados dependerá de como
+        estruturamos no CSS.
+    </p>
+    <hr>
+    <h2>Marca no texto</h2>
+    <p>
+        Para marcar um texto, igual um marcar texto, usamos a tag &lt;mark&gt;...&lt;/mark&gt; para isso. <mark>Observe
+            agora.</mark>
+    </p>
+    <hr>
+    <h2>&lt;big&gt; morreu, mas o &lt;small&gt; ainda sobrevive</h2>
+    <p>
+        Mantenha-se atualizado quanto à usabilidade de algumas tag. Conforme a linguagem de marcação html vai evoluindo
+        vamos conhecendo novas estruturas e outras deixam de funcionar. <br>
+    <blockquote><strong>FIQUE SEMPRE DE OLHO:</strong> Existe um documento oficial do Consórcio da World Wide Web (W3C)
+        que é atualizado constantemente com as tags que estão ficando obsoletas e algumas substituição desejáveis que
+        devemos fazer.</blockquote>
+    </p>
+    <p>
+        Você poderá usar &lt;small&gt; para <small>deixar um texto menor</small>.
+    </p>
+    <hr>
+
+    <h2><del>Texto deletado</del></h2>
+    <p>
+        Em html 5 envolva o texto que deseja criar um risco deletado com a tag del &rarr; &lt;del&gt;
+    </p>
+    <hr>
+
+    <h2><ins>Texto inserido</ins></h2>
+    <p>
+        O <ins>texto inserido</ins> é o exato oposto do <del>texto deletado</del> que vimos anteriormente. Neste caso,
+        se colocarmos um texto qualquer entro de &lt;ins&gt; e &lt;/ins&gt;, estamos dizendo que <ins>o texto está ali
+            deve ser lido e você deve prestar atenção nele</ins>. É o que fazíamos anteriormente ao utliziar a tag
+        &lt;u&gt; para sublinhar um texto.
+    </p>
+    <hr>
+
+    <h2>Textos sobrescrito e subscrito</h2>
+    <p>
+        Use tag &lt;sob&gt; para usar número como expoente: x=5<sob>2</sob>+5. <br>
+        Use a tag &lt;sub&gt; para usar números assim: Ca<sub>2</sub>.
+    </p><br>
+
+    <h2>Trechos de código</h2>
+    <p>
+        Se em algum momento desejar inserir um trecho de um código de programação, usamos a tag &lt;code&gt; para dar um
+        valor semântico ao trecho dentro da tag pra que HTML possa delimitar seu código. Inclusive, o trecho terá um
+        efeito visual, fazendo com que as letras ficam no modo <code>mono-espaçadas</code> (monospace), o que facilita
+        bastante a leitura do código. Observe:
+    </p>
+    <p>
+        <strong>Exemplo de código em Python</strong><br>
+        <code>
+            num = int(input('Digite um número: '))
+            if num % 2 == 0:
+                print(f'O número {num} é par')
+            else
+                print(f'O número {num} é ímpar')
+            print('Fim do Programa')
+        </code>
+    </p>
+    <p>
+        Observe que no código acima foi escrito com quebra de linha e identação no html, porém não foi respeitado no
+        momento da exibição no navegador. Para resolver isso, colocamos todo o bloco que está na tag &lt;code&gt; dentro
+        da tag &lt;pre&gt;. Esta tag será a tag pai da tag code, fazendo com que a tag filho seja exibida da exata forma
+        em que está sendo escrita no código html. Observe:
+    </p>
+
+    <pre>
+                <strong>Exemplo de código em Python</strong>
+                <code>
+                    num = int(input('Digite um número: '))
+                    if num % 2 == 0:
+                        print(f'O número {num} é par')
+                    else
+                        print(f'O número {num} é ímpar')
+                    print('Fim do Programa')
+                </code>
+            </pre>
+    <!-- Dica:
+     Para colocar um bloco de código dentro de uma tag pai, basta selecionar o bloco, digitar Ctrl+Shift+P, digitar "abb" e selecionar a opção "Emmet: Wrap with Abbreviaton". Dentro desta opção, digite o nome da tag pai e todo o bloco selecionado será inserido automaticamente.
+     -->
+    <hr>
+    <h2>"Citações"</h2>
+    <p>
+        Para usar um trecho use a tag &lt;q&gt; (do inglês <em>quote</em>, que significa citar). O texto que estiver entre &lt;q&gt; e &lt;/q&gt; já vai receber automaticamente as aspas, mas não terá nenhum deslocamento. Essa técnica é mais usada quando queremos um citação no meio do parágrafo.    
+    </p>
+    <p>
+        Para citar em bloco, usamos a tag &lt;blockquote&gt;, observe:
+    </p>
+
+        <blockquote>Por exemplo: quando questionado sobre o que pessoas inteligentes conversam, o humorista renascentista italiano, escritor e grastrônomo, Bartolomeo Sacchi, nascido em 1421 em Piadena, respondeu prontamente e com toda segurança a frase: <q>de litteris e de armis, praestantibusque ingeniis</q>. A frase está em latim e significa, em tradução livre, <q>de letras, de armas e de gênios formidáveis</q>. Uma forma de atribuir os conceitos que realmente deveriam estar relacionados aos contextos de suas conversas.</blockquote>
+    <hr>
+
+    <h2>Abreviações</h2>
+    <p>Em HTML5 usamos a &lt;abbr&gt; (abbrevition, em inglês)para definir que aquele texto dentro da tag representa uma abreviação de algum termo. O título da abreviação deverá representar o que aquela abreviação significa. Usamos o atributo "title" para isso e o valor dentro do atribulo será o que repesenta. <br>
+    <pre><code>&lt;p&gt;Estou estudando &lt;abbr title="Hyper Text Markup Language"&gt;HTML&lt;/abbr&gt; para criar sites.&lt;/p&gt;</code></pre>
+    </p>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> para criar sites.</p>
+    <p>Quando você passar o mouse por cima da abreviação, verá o valor que está inserido no atributo title acima.</p>
+    <hr>
+    <h2>Encerramento</h2>
+    <p>Óbvio que existem outras tags semânticas, como &lt;address&gt;, &lt;header&gt; &lt;time&gt;, entre outros. Para saber de alguns outros, acessem <a href="https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065" target="_blank">este estudo</a>.</p>
+</body>
+
+</html>
