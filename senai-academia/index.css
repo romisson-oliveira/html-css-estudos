@@ -1,6 +1,12 @@
+/*  <img src="./assets/imgCapa.jpg" alt="pensativo" width="300" class="academy"> 
+    Estilo da imagem: adaptável e com aparência suave.
+    */
+
 .academy {
     position: relative;
     left: 25px;
-    border-radius: 58px 10px;
-    box-shadow: 5px 5px 20px 0;
+    border-radius: 58px 10px;       /* Cantos arrendondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);       /* Sombra leve ao redor da imagem */
+    max-width: 100%;        /* Faz a imagem ocupar no máximo 100% do espaço disponível */
+    height: auto;       /* Mantém a proporção da imagem automaticamente */
 }

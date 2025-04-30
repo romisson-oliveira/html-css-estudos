@@ -61,3 +61,14 @@ main h2{
 main  h2 span {
     color: #2027df;
 }
+
+main p {
+    font-size: 18px;    
+}
+
+footer {
+    background-color: #111;     /* Fundo preto */
+    color: white;       /* Texto branco */
+    text-align: center;     /* Texto centralizado */
+    padding: 10px 0;        /* Espaço acima e abaixo dentro do footer */
+}
