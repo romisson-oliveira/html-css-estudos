@@ -21,6 +21,6 @@ Neste repositório, você encontrará minha evolução na matéria seguindo o cu
 - Clone o repositório:
    ```bash
    git clone https://github.com/romisson-oliveira/html-css-estudos.git
-- Entre em contato por e-mail: [Acesse o link.](mailto:oliveiraromisson@hotmail.com)
+- Entre em contato por e-mail: [Acesse o link.](mailto:oliveiraromisson@hotmail.com).
   
  

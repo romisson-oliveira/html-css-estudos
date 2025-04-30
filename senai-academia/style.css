@@ -1,0 +1,63 @@
+/* 
+O seletor "body" serve para definir estilos gerais da página.
+Aqui colocamos uma fonte, removemos margens padrão, e definimos uma cor de fundo e de texto.
+<link rel="stylesheet" href="style.css">
+*/
+body {
+    font-family: Arial, sans-serif;     /* Define a fonte do texto para Arial */
+    margin: 0;  /* Remove a margem padrão do navegador */
+    padding: 0;     /* Remove o espaçamento interno padrão */
+    background-color: #f2f2f2;      /* Define a cor de fundo da página (cinza claro) */
+    color: #0a0101;        /* Cor de texto (cinza escuro) */ 
+}
+
+/* "header" é a parte superior do site.
+Aqui deixamos com fundo escuro e texto branco. */
+header {
+    background-color: #111;     /* Cor de fundo preto */
+    color: white;       /* Cor de texto branca */
+    position: relative;     
+    text-align: center;     /* Alinha todo o conteúdo ao centro */
+    padding: 20px 0;        /* Espaço acima e abaixo dentro do header */
+}
+
+/* 
+    "nav a" estiliza os links do menu de navegação.
+    O "a" representa as tags de link <a>.
+*/
+
+nav a {
+    color: #ffcc00;     /* Cor amarela vibrante para os links */
+    text-decoration: none;      /* Remove o sublinhado padrão */
+    margin: 0 10px;     /* Espaço horizontal entre os links */
+    font-weight: bold;      /* Deixa o texto dos links em negrito */    
+}
+
+/* 
+    Esse bloco muda o estilo dos links quando o mouse passa por cima.
+    Isso é chamado de "hover", que significa "pairar".
+*/
+
+nav a:hover{
+    text-decoration: underline;     /* Adiciona sublinhado ao passar o mouse; */
+    color: white;       /* Quando o mouse estiver acima dele, ele vai trocar de cor */
+    transition: 1000ms;     /* Suaviza a troca da cor */
+}
+
+/* Estiliza o subtítulo dentro d */
+
+main {
+    text-align: center;     /* Centralizar o conteúdo dentro do main */
+    padding: 40px 20px;      /* Espaçamento interno: 40px em cima/baixo, 20px da lateral */
+}
+
+/* Estiliza o subtítulo dentro da área principal. */
+main h2{
+    font-size: 28px;        /* Tamanho da fonte grande */
+    margin-bottom: 10px;        /* Espaço abaixo do título */
+    color: #bfc0d7;
+}
+
+main  h2 span {
+    color: #2027df;
+}
